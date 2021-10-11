@@ -13,6 +13,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import models.Note;
 
 /**
  *
@@ -27,10 +28,10 @@ public class NoteServlet extends HttpServlet {
         // load up a JSP
         getServletContext().getRequestDispatcher("/WEB-INF/viewnote.jsp").forward(request,response);
         
+        
         String path = getServletContext().getRealPath("/WEB-INF/note.txt");
         // to read files
         BufferedReader br = new BufferedReader(new FileReader(new File(path)));
-
         
         getServletContext().getRequestDispatcher("/WEB-INF/editnote.jsp").forward(request,response);
         return;
