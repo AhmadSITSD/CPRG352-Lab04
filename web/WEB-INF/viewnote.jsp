@@ -15,9 +15,9 @@
         <h1>Simple Note Keeper</h1><br>
         <form method="GET" action="note">
         <h2>View Note</h2><br>
-        <p><b>Title:</b></p><br>
-        <p><b>Contents:</b></p><br>
-        <a href="edit">Edit</a>
+        <p><b>Title: ${note.title}</b></p><br>
+        <p><b>Contents: ${note.contents}</b></p><br>
+        <a href="note?edit">Edit</a>
         </form>
     </body>
 </html>

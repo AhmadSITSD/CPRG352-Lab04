@@ -13,7 +13,7 @@
     </head>
     <body>
         <h1>Simple Note Keeper</h1><br>
-        <form method="POST" action="viewnote.jsp"
+        <form method="POST" action="edit"
         <h2>Edit Note</h2><br>
         <label>Title:</label>
         <input type="text" name="title" value=""><br>

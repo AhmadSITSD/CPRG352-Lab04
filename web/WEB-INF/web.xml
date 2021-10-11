@@ -15,5 +15,6 @@
     </session-config>
     <welcome-file-list>
         <welcome-file>note</welcome-file>
+        <welcome-file>edit</welcome-file>
     </welcome-file-list>
 </web-app>
