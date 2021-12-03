@@ -27,14 +27,7 @@ public class NoteServlet extends HttpServlet {
             throws ServletException, IOException {
         // load up a JSP
         getServletContext().getRequestDispatcher("/WEB-INF/viewnote.jsp").forward(request,response);
-        
-        
-        String path = getServletContext().getRealPath("/WEB-INF/note.txt");
-        // to read files
-        BufferedReader br = new BufferedReader(new FileReader(new File(path)));
-        
-        getServletContext().getRequestDispatcher("/WEB-INF/editnote.jsp").forward(request,response);
-        return;
+     
     }
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
