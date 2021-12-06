@@ -33,7 +33,7 @@ public class NoteServlet extends HttpServlet {
         BufferedReader br = new BufferedReader(new FileReader(new File(path)));
         String title = br.readLine();
         String contents = br.readLine();
-        
+       
         Note note = new Note(title, contents);
         String editButton = request.getParameter("edit");
         
@@ -43,12 +43,11 @@ public class NoteServlet extends HttpServlet {
             br.close();
             return;
         } else {
-            request.setAttribute("note", note);
             getServletContext().getRequestDispatcher("/WEB-INF/viewnote.jsp").forward(request,response);
             br.close();
             return;
         }
-
+        
      
     }
     @Override
@@ -62,7 +61,7 @@ public class NoteServlet extends HttpServlet {
             
         Note note = new Note(title, contents);
         request.setAttribute("note", note);
-        pw.print(title);
+        pw.println(title);
         pw.print(contents);
         pw.close();
         
