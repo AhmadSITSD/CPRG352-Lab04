@@ -18,7 +18,7 @@
         <label>Title:</label>
         <input type="text" name="title" value="${note.title}"><br>
         <label>Contents:</label>
-        <textarea name="content" value="${note.contents}"></textarea><br>
+        <textarea name="contents" value="${note.contents}"></textarea><br>
         <input type="submit" name="saveit" value="Save">
         </form>
     </body>
